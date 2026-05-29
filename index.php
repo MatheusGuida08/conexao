@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt -> execute(['email' => $email]);
     $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
     if ($usuario && password_verify($senha, $usuario['senha'])) {
-        $_SESSION['usuario_id'] = $usuario['nome'];
+        $_SESSION['usuario'] = $usuario['nome'];
         $_SESSION['tipo'] = $usuario['tipo'];
         header("Location: painel.php");
         exit();

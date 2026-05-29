@@ -28,6 +28,6 @@ CREATE TABLE IF NOT EXISTS alugueis (
 );
 
 INSERT INTO usuarios (email, senha)
-VALUES ('matheus@gmail.com', '123456');
+VALUES ('senac@gmail.com', '123456');
 
 SELECT * FROM usuarios
