@@ -26,8 +26,8 @@ CREATE TABLE IF NOT EXISTS alugueis (
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
     FOREIGN KEY (id_livro) REFERENCES livros(id)
 );
-
+6
 INSERT INTO usuarios (email, senha)
-VALUES ('senac@gmail.com', '123456');
+VALUES ('senac@gmail.com', '12345');
 
 SELECT * FROM usuarios

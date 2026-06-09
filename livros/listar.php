@@ -1,11 +1,12 @@
 <?php
 require '../conexao.php';
-$sql = 'SELECT * FROM livros';
+$sql="SELECT * FROM livros";
 $stmt = $pdo->query($sql);
 $livros = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -68,3 +69,4 @@ $livros = $stmt->fetchAll(PDO::FETCH_ASSOC);
  
 </body>
 </html>
+ 
